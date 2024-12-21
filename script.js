@@ -6,12 +6,15 @@ mobileMenu.addEventListener('click', () => {
   mobileMenu.classList.toggle('active');
 });
 
-const more = document.getElementById("more");
-const button = document.querySelector(".speaker_hover");
+const more = document.getElementById('more');
+const button = document.querySelector('.btn');
 
-button.addEventListener("click", () => {
-    more
-})
-function open_more(){
-    more.classList.add("open_more");
-}
+button.addEventListener('click', () => {
+  more.classList.add('open_more');
+
+  // check if all cards are displayed
+  const allcards = document.querySelectorAll('mobile_speakers');
+  if (Array.from(allcards).every((card) => card.style.display !== 'none')) {
+    button.style.display = 'none'; // hide the button if all cards are shown
+  }
+});
