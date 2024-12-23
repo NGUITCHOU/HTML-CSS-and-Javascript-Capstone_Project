@@ -129,3 +129,5 @@ I will like to thank Codegisoft Academy and all the students i've collaborated w
 ## 📝 License <a name="license"></a>
 
 This project is [LICENSE](LICENCE.md) licensed.
+Capstone project to build an online website for a conference.
+https://vercel.com/nguitchous-projects/html-css-and-javascript-capstone-project
