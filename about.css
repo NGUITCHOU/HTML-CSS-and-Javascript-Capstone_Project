@@ -1,0 +1,695 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Describing the madia query for mobile screen */
+@media (min-width: 768px) {
+  .desktop_menu {
+    display: none;
+  }
+
+  .desktop_menu.active {
+    display: flex;
+    z-index: 1000;
+    position: absolute;
+  }
+
+  .desktop_menu ul {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 100vh;
+    width: 768px;
+    gap: 20px;
+    font-size: 25px;
+  }
+
+  .desktop_menu ul li a {
+    color: #3a4a42;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .mobile_menu p {
+    padding: 2px 15px;
+    margin: 10px;
+    background-color: #3e3e3e;
+    width: 2px;
+  }
+
+  .mobile_menu {
+    background: url(assets/images/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    color: #3e3e3e;
+    height: 10vh;
+  }
+
+  .footer_content p {
+    width: 40%;
+    font-weight: light;
+  }
+
+  .partners_content p {
+    background-color: red;
+    padding: 1px;
+    margin-left: 48%;
+    width: 30px;
+    margin-top: -15px;
+  }
+
+  .about_summit p {
+    background-color: red;
+    padding: 1.5px;
+    width: 45px;
+    margin-left: 45%;
+    border-radius: 5px;
+  }
+
+  .mobile_menu.active p:nth-child(1) {
+    rotate: 45deg;
+    top: 6px;
+    position: relative;
+  }
+
+  .mobile_menu.active p:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile_menu.active p:nth-child(3) {
+    rotate: -45deg;
+    top: -6px;
+    position: relative;
+  }
+
+  /* styling the project section */
+  .hero {
+    background: url(assets/images/images/home-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero_content h4 {
+    color: red;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px;
+  }
+
+  .hero_content h1 {
+    color: red;
+    padding: 20px;
+  }
+
+  .about_text {
+    padding: 50px;
+    margin-top: 28px;
+    background-color: white;
+    border: 5px solid white;
+    font-size: 20px;
+  }
+
+  .about_contact {
+    padding: 30px;
+    width: 80%;
+    margin-left: 40px;
+    font-size: 20px;
+  }
+
+  .contact {
+    padding: 30px;
+    margin-top: -40px;
+    text-decoration: underline;
+    font-weight: bolder;
+  }
+
+  .about_logo {
+    padding: 30px;
+    background-color: white;
+  }
+
+  .about_logo h2 {
+    padding: 20px;
+    font-size: 25px;
+  }
+
+  .lines {
+    padding: 1px;
+    background-color: red;
+    width: 50px;
+    margin-left: 45%;
+    border-radius: 3px;
+  }
+
+  .about_logo h4 {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .texts {
+    display: none;
+  }
+
+  .logo {
+    padding: 30px;
+    border: 1px solid #d9d9d9;
+    background-color: white;
+  }
+
+  .about_summit {
+    padding: 30px;
+    background-color: white;
+  }
+
+  .about_summit h3 {
+    padding: 10px;
+    font-size: 25px;
+  }
+
+  .about_summit h4 {
+    padding: 20px;
+    font-weight: bold;
+    font-size: 25px;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .about_cards {
+    background-color: white;
+  }
+
+  .card {
+    background-color: red;
+  }
+
+  .card1 {
+    background: url(assets/images/images/back.avif) red;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding: 20%;
+    color: white;
+    margin-bottom: -20px;
+    font-weight: bold;
+    background-color: red;
+    font-size: 30px;
+    opacity: 40%;
+  }
+
+  .cards {
+    background-color: red;
+  }
+
+  .card2 {
+    background: url(assets/images/images/card2.jpeg);
+    width: 100%;
+    padding: 20%;
+    color: white;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: red;
+    opacity: 40%;
+  }
+
+  /* styling the footer section */
+  .partners {
+    background-color: #3e3e3e;
+    margin-top: 20px;
+    color: white;
+    padding: 20px;
+  }
+
+  .partners_content {
+    text-align: center;
+  }
+
+  .partners_content h2 {
+    padding: 20px;
+  }
+
+  .icons ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-left: 18%;
+  }
+
+  .icons ul li {
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .footer_content {
+    display: flex;
+    gap: 100px;
+    padding: 20px;
+    margin-left: 20%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  .mobile_menu {
+    background: url(assets/images/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    color: #3e3e3e;
+    padding: 30px;
+    border: 1px solid wheat;
+  }
+
+  .mobile_menu p {
+    padding: 2px 15px;
+    margin: 10px;
+    background-color: #3e3e3e;
+    width: 2px;
+  }
+
+  .desktop_menu {
+    display: none;
+  }
+
+  /* styling the project section */
+  .hero {
+    background: url(assets/images/images/home-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero_content h4 {
+    color: red;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px;
+  }
+
+  .hero_content h1 {
+    color: red;
+    padding: 20px;
+  }
+
+  .about_text {
+    padding: 50px;
+    margin-top: 28px;
+    background-color: white;
+    border: 5px solid white;
+  }
+
+  .about_contact {
+    padding: 30px;
+    width: 80%;
+    margin-left: 40px;
+  }
+
+  .contact {
+    padding: 30px;
+    margin-top: -40px;
+    text-decoration: underline;
+    font-weight: bolder;
+  }
+
+  .about_logo {
+    padding: 30px;
+    background-color: white;
+  }
+
+  .about_logo h2 {
+    padding: 20px;
+  }
+
+  .lines {
+    padding: 1px;
+    background-color: red;
+    width: 50px;
+    margin-left: 45%;
+    border-radius: 3px;
+  }
+
+  .about_logo h4 {
+    padding: 20px;
+    font-weight: lighter;
+  }
+
+  .texts {
+    display: none;
+  }
+
+  .logo {
+    padding: 30px;
+    border: 1px solid #d9d9d9;
+    background-color: white;
+  }
+
+  .about_summit {
+    padding: 30px;
+    background-color: white;
+  }
+
+  .about_summit h3 {
+    padding: 10px;
+  }
+
+  .about_summit p {
+    background-color: red;
+    padding: 1.5px;
+    width: 45px;
+    margin-left: 45%;
+    border-radius: 5px;
+  }
+
+  .about_summit h4 {
+    padding: 20px;
+    font-weight: lighter;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .about_cards {
+    background-color: white;
+  }
+
+  .card {
+    background-color: red;
+  }
+
+  .card1 {
+    background: url(assets/images/images/back.avif) red;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding: 20%;
+    color: white;
+    margin-bottom: -20px;
+    font-weight: bold;
+    background-color: red;
+    font-size: 30px;
+    opacity: 40%;
+  }
+
+  .cards {
+    background-color: red;
+  }
+
+  .card2 {
+    background: url(assets/images/images/card2.jpeg);
+    width: 100%;
+    padding: 20%;
+    color: white;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: red;
+    opacity: 40%;
+  }
+
+  /* styling the footer section */
+  .partners {
+    background-color: #3e3e3e;
+    margin-top: 20px;
+    color: white;
+    padding: 20px;
+  }
+
+  .partners_content {
+    text-align: center;
+  }
+
+  .partners_content h2 {
+    padding: 20px;
+  }
+
+  .partners_content p {
+    background-color: red;
+    padding: 1px;
+    margin-left: 48%;
+    width: 30px;
+    margin-top: -15px;
+  }
+
+  .icons ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-left: 18%;
+  }
+
+  .icons ul li {
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .footer_content {
+    display: flex;
+    gap: 100px;
+    padding: 20px;
+    margin-left: 20%;
+  }
+
+  .footer_content p {
+    width: 40%;
+    font-weight: light;
+  }
+}
+
+@media (min-width: 1025px) {
+  .mobile_menu {
+    background: url(assets/images/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    color: #3e3e3e;
+    padding: 30px;
+    border: 1px solid wheat;
+  }
+
+  .mobile_menu p {
+    padding: 2px 15px;
+    margin: 10px;
+    background-color: #3e3e3e;
+    width: 2px;
+  }
+
+  .desktop_menu {
+    display: none;
+  }
+
+  /* styling the project section */
+  .hero {
+    background: url(assets/images/images/home-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero_content h4 {
+    color: red;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px;
+  }
+
+  .hero_content h1 {
+    color: red;
+    padding: 20px;
+  }
+
+  .about_text {
+    padding: 50px;
+    margin-top: 28px;
+    background-color: white;
+    border: 5px solid white;
+  }
+
+  .about_contact {
+    padding: 30px;
+    width: 80%;
+    margin-left: 40px;
+  }
+
+  .contact {
+    padding: 30px;
+    margin-top: -40px;
+    text-decoration: underline;
+    font-weight: bolder;
+  }
+
+  .about_logo {
+    padding: 30px;
+    background-color: white;
+  }
+
+  .about_logo h2 {
+    padding: 20px;
+  }
+
+  .about_logo p {
+    padding: 1px;
+    background-color: red;
+    width: 50px;
+    margin-left: 45%;
+    border-radius: 3px;
+  }
+
+  .about_logo h4 {
+    padding: 20px;
+    font-weight: lighter;
+  }
+
+  .logo {
+    padding: 30px;
+    border: 1px solid #d9d9d9;
+    background-color: white;
+  }
+
+  .about_summit {
+    padding: 30px;
+    background-color: white;
+  }
+
+  .about_summit h3 {
+    padding: 10px;
+  }
+
+  .about_summit p {
+    background-color: red;
+    padding: 1.5px;
+    width: 45px;
+    margin-left: 45%;
+    border-radius: 5px;
+  }
+
+  .about_summit h4 {
+    padding: 20px;
+    font-weight: bold;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .about_cards {
+    gap: 20px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .card {
+    background-color: red;
+  }
+
+  .card1 {
+    background: url(assets/images/images/back.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    background-color: red;
+    opacity: 40%;
+  }
+
+  .cards {
+    background-color: red;
+  }
+
+  .card2 {
+    background: url(assets/images/images/card2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: red;
+    opacity: 40%;
+    margin-top: -2px;
+  }
+
+  /* styling the footer section */
+  .partners {
+    background-color: #3e3e3e;
+    margin-top: 50px;
+    color: white;
+    padding: 15px;
+  }
+
+  .partners_content {
+    text-align: center;
+  }
+
+  .partners_content h2 {
+    padding: 20px;
+  }
+
+  .partners_content p {
+    background-color: red;
+    padding: 1px;
+    margin-left: 50%;
+    width: 30px;
+    margin-top: -18px;
+  }
+
+  .icons ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-left: 20px;
+  }
+
+  .icons ul li {
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .footer_content {
+    display: flex;
+    gap: 30%;
+    padding: 20px;
+    margin-left: 25%;
+  }
+
+  .footer_content h2 {
+    margin-left: -20%;
+  }
+
+  .footer_content p {
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 80px;
+  }
+}
